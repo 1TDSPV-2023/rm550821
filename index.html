@@ -21,8 +21,12 @@
         </nav>
     </header>
 
+    
+    
     <h2 class="tit-sec">Seção de Fotos</h2>
-
+    
+    
+    
     <section class="conteudo">
         <div>
             <img src="./img/lobo1.jpg" alt="Lobo">
@@ -49,14 +53,35 @@
             <p>Legenda</p>
         </div>
     </section>
-
+    
     <footer class="rodape">
         <h2 class="sub-titulo">Fale Conosco</h2>
-        <nav>
+        <!-- <nav>
             <a class="icone__botao" href="#"><img src="./img/social-1.png" alt="Logo github"></a>
             <a class="icone__botao" href="#"><img src="./img/social-2.png" alt="Logo facebook"></a>
             <a class="icone__botao" href="#"><img src="./img/social-3.png" alt="Logo twitter"></a>
-        </nav>
+        </nav> -->
+        
+        <div>
+            <form action="/index.html" method="post" onsubmit="return true ">                        <!-- get e post-->
+                <fieldset>
+                    <legend>contato</legend>
+                    <div>
+                        <label for="idNm">Nome</label>
+                        <input type="text" name="txtNm" id="idNm" placeholder="digite seu Nome" value="silvio">
+                </div>
+                <div>
+                        <label for="idemail">email</label>
+                        <input type="email" name="txtemail" id="idemail" placeholder="digite seu email" value="email@email.com">
+                        <DIv>
+                            <input type="Submit" value="Enviar">
+                            <input type="Reset"  value="Limpar">
+                        </DIv>
+                </div>
+               </fieldset>
+        </form>
+      </div>
+
     </footer>
 
 </body>

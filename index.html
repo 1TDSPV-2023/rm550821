@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lobos</title>
     <link rel="stylesheet" href="./css/estilo.css">
- 
+    
 </head>
 
 <body>
@@ -24,6 +24,10 @@
     
     
     <h2 class="tit-sec">Seção de Fotos</h2>
+
+    <div>
+        <button name="botao"onclick = "alert(this.name)">click</button>
+    </div>
     
     
     
@@ -63,7 +67,7 @@
         </nav> -->
         
         <div>
-            <form action="/index.html" method="post" onsubmit="return true ">                        <!-- get e post-->
+            <form action="./fake.html" method="post" onsubmit="return true ">                        <!-- get e post-->
                 <fieldset>
                     <legend>contato</legend>
                     <div>
@@ -84,6 +88,28 @@
 
     </footer>
 
+
+
+     <script>
+        //comentario de linha
+        /* pra bloco*/ 
+        // declaração de variaveis com a palavra reservada var //
+        var nr1 = 10;
+        var nr2 = 5;
+
+        //saída de dados com console.log()//
+         console.log(nr1);
+         console.log(nr2);
+
+         const botoes = document.querySelectorAll("button")
+         botoes.forEach( (botao)=>{
+            if(botao.textContent == "click"){
+                botao.addEventListener("click", ()=> {
+                    alert("oi !!")
+                })
+            }
+         });
+     </script>
 </body>
 
 </html>
